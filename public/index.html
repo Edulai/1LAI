@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>1LAI</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>1LAI</h1>
+
+<input id="name" placeholder="Tu nombre">
+<button onclick="join()">Entrar</button>
+
+<h2>Jugadores</h2>
+<div id="players"></div>
+
+<h2>Mesa</h2>
+<div id="table"></div>
+
+<h2>Tus cartas</h2>
+<div id="hand"></div>
+
+<button onclick="uno()">UNO</button>
+<button onclick="passTurn()">Pasar turno</button>
+
+<div>Tiempo: <span id="timer">10</span></div>
+
+<h2>Chat</h2>
+<input id="msg">
+<button onclick="send()">Enviar</button>
+
+<div id="chat"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="deck.js"></script>
+<script src="rules.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
